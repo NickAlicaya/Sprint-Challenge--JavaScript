@@ -39,8 +39,12 @@ closure is a function with references to its outerscope.. It works with the prin
 nested child functions can access anything outside of it.
 4. Describe the four rules of the 'this' keyword.
 Global/window literally refers to the global scope environment.
-Implicit this refer to the left of the dot. 
-Explicit when keywords .call or .bind are used this refers to the object used in the argument
+ In Implicit binding of "this" applies to objects with methods. The left side 
+of the dot will point to object "this" is targetting.this refer to the left of the dot. 
+Explicit when keywords .call or .bind are used this refers to the object used in the argument.Explicit key word uses specifically call, apply or bind to tell the function
+ where this is targetting. Call immediately passes data to refer to
+  to be used by the function.
+ Bind makes a brand new function that you can use later.
 New When the new keyword is used to create a new object that also access the constuctor. The new object created is the target/reference of "THIS".
 5. Why do we need super() in an extended class?
 So that the child class can access attributes from the parent class.
